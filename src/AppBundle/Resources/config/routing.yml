@@ -1,0 +1,30 @@
+api_bookmark_index:
+    path:     /bookmarks
+    defaults: { _controller: AppBundle:Bookmark:index }
+    methods: [GET]
+
+#api_bookmark_get
+#    path:     /bookmarks/{slug}
+#    defaults: { _controller: AppBundle:Bookmark:get }
+#    methods: [GET]
+
+api_bookmark_post:
+    path:     /bookmarks
+    defaults: { _controller: AppBundle:Bookmark:add }
+    methods: [POST]
+
+api_comment_post:
+    path:     /comments
+    defaults: { _controller: AppBundle:Comments:add }
+    methods: [POST]
+
+api_comment_delete:
+    path:     /comments
+    defaults: { _controller: AppBundle:Comments:delete }
+    methods: [DELETE]
+
+api_comment_update:
+    path:     /comments
+    defaults: { _controller: AppBundle:Comments:update }
+    methods: [PUT]
+
